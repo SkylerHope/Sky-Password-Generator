@@ -29,4 +29,4 @@ php spg.php
 
 <h5>Yes, installation and usage are the same on both Linux and Windows</h5>
 
-<h6>NOTE: <i>The Windows version has a 2 minute delay before the program exits<br/>after displaying the password</i></h6>
+<h6>NOTE: <i>The Windows version has a 2 minute delay before the program exits, after displaying the password</i></h6>

@@ -11,7 +11,7 @@ A simple CLI password generator
 <hr>
 
 <h3>SPG Installation</h3>
-Just download the .zip file of the latest release <br/>
+Just download the .zip file of the <a href="https://github.com/SkylerHope/Sky-Password-Generator/releases" target="_blank">latest release</a> <br/>
 and extract it to your desired location
 
 <hr>

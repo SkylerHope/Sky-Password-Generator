@@ -17,7 +17,7 @@ and extract it to your desired location
 <hr>
 
 <h3>SPG Usage</h3>
-Open the Terminal or Command Prompt <i>(if you are on Windows)</i> inside the directory where the spg.php file is located, <br/>
+Open the Terminal or Command Prompt <i>(if you are on Windows)</i> inside the directory where the <b>spg.php</b> file is located, <br/>
 and type the following:
 <br/><br/>
 

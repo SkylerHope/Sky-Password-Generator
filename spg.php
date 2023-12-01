@@ -98,6 +98,27 @@ if($symbolsInput == 'n') {
 $password = generatePassword($len, $includeNumbers, $includeSymbols);
 
 // Display the generated password
-echo "\nGenerated Password: $password\n";
+echo "\nGenerated Password: $password\n\n";
+
+// Ask user to store the password locally [NEW]
+$saveToPasswordFile = readline("Save password to passwords.txt? [y/n]: ");
+
+// Keep asking to save the password if the user provides invalid input [NEW]
+while($saveToPasswordFile !== 'y' && $saveToPasswordFile !== 'n') {
+    $saveToPasswordFile = readline("Invalid input, store password to passwords.txt? [y/n]: ");
+}
+
+// Check if user wants to save the password locally [NEW]
+if($saveToPasswordFile == 'y') {
+    // Store the password in a txt file [NEW]
+    $generatedPassword = "\n$password\n";
+    $passwordFile = fopen('passwords.txt', 'a');
+    fwrite($passwordFile, $generatedPassword);
+    fclose($passwordFile);
+    // Prompt user to exit the program after saving the password [NEW]
+    $exitText = readline("Password Saved! Press any key to exit...\n");
+} else {
+    exit;
+}
 
 ?>
